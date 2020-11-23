@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74D7D8BC5F4243589BF2560D /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4298E93264F2E6007294F613 /* libPods-Demo.a */; };
+		E95B209D2545CD4400ACAD27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B209C2545CD4400ACAD27 /* AppDelegate.m */; };
+		E95B20A82545CD4800ACAD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95B20A72545CD4800ACAD27 /* Assets.xcassets */; };
+		E95B20AB2545CD4800ACAD27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95B20A92545CD4800ACAD27 /* LaunchScreen.storyboard */; };
+		E95B20AE2545CD4800ACAD27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20AD2545CD4800ACAD27 /* main.m */; };
+		E95B20BC2545CE2700ACAD27 /* RecordSoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20BB2545CE2700ACAD27 /* RecordSoundViewController.m */; };
+		E95B20C82545CE3E00ACAD27 /* UCARAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20C02545CE3E00ACAD27 /* UCARAudioTool.m */; };
+		E95B20C92545CE3E00ACAD27 /* UCARAudioFilePathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20C42545CE3E00ACAD27 /* UCARAudioFilePathTool.m */; };
+		E95B20CA2545CE3E00ACAD27 /* UCARRecordSoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20C72545CE3E00ACAD27 /* UCARRecordSoundTool.m */; };
+		E95B20E62545D07800ACAD27 /* UCARLameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E95B20E52545D07800ACAD27 /* UCARLameTool.m */; };
+		E9CE85DC2566789B00796C8B /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85D22566789B00796C8B /* RNCryptor.m */; };
+		E9CE85DD2566789B00796C8B /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85D72566789B00796C8B /* RNDecryptor.m */; };
+		E9CE85DE2566789B00796C8B /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85D82566789B00796C8B /* RNEncryptor.m */; };
+		E9CE85DF2566789B00796C8B /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85DB2566789B00796C8B /* RNCryptorEngine.m */; };
+		E9CE85E4256678A800796C8B /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CE85E3256678A800796C8B /* libmp3lame.a */; };
+		E9CE85EA256B625300796C8B /* UCARDirverUploadFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85E9256B625300796C8B /* UCARDirverUploadFileTool.m */; };
+		E9CE85EF256B66E000796C8B /* UCARWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85EE256B66E000796C8B /* UCARWeakProxy.m */; };
+		E9CE85F4256B8E5F00796C8B /* DirverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE85F3256B8E5F00796C8B /* DirverViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4298E93264F2E6007294F613 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA842436E7AA3957CBD0ED2 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		60B04658CD4145B31C014A6C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		E95B20982545CD4400ACAD27 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95B209B2545CD4400ACAD27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E95B209C2545CD4400ACAD27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E95B20A72545CD4800ACAD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E95B20AA2545CD4800ACAD27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E95B20AC2545CD4800ACAD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95B20AD2545CD4800ACAD27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E95B20BA2545CE2700ACAD27 /* RecordSoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSoundViewController.h; sourceTree = "<group>"; };
+		E95B20BB2545CE2700ACAD27 /* RecordSoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSoundViewController.m; sourceTree = "<group>"; };
+		E95B20BF2545CE3E00ACAD27 /* UCARAudioFilePathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARAudioFilePathTool.h; sourceTree = "<group>"; };
+		E95B20C02545CE3E00ACAD27 /* UCARAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCARAudioTool.m; sourceTree = "<group>"; };
+		E95B20C12545CE3E00ACAD27 /* UCARLameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARLameTool.h; sourceTree = "<group>"; };
+		E95B20C22545CE3E00ACAD27 /* UCARRecordSoundTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARRecordSoundTool.h; sourceTree = "<group>"; };
+		E95B20C32545CE3E00ACAD27 /* UCARSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARSingle.h; sourceTree = "<group>"; };
+		E95B20C42545CE3E00ACAD27 /* UCARAudioFilePathTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCARAudioFilePathTool.m; sourceTree = "<group>"; };
+		E95B20C52545CE3E00ACAD27 /* UCARAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARAudioTool.h; sourceTree = "<group>"; };
+		E95B20C62545CE3E00ACAD27 /* UCARRecorderKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCARRecorderKit.h; sourceTree = "<group>"; };
+		E95B20C72545CE3E00ACAD27 /* UCARRecordSoundTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCARRecordSoundTool.m; sourceTree = "<group>"; };
+		E95B20E52545D07800ACAD27 /* UCARLameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCARLameTool.m; sourceTree = "<group>"; };
+		E9CE85D12566789B00796C8B /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		E9CE85D22566789B00796C8B /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		E9CE85D32566789B00796C8B /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		E9CE85D42566789B00796C8B /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		E9CE85D52566789B00796C8B /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		E9CE85D62566789B00796C8B /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		E9CE85D72566789B00796C8B /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		E9CE85D82566789B00796C8B /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		E9CE85D92566789B00796C8B /* RNCryptor iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor iOS.h"; sourceTree = "<group>"; };
+		E9CE85DA2566789B00796C8B /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E9CE85DB2566789B00796C8B /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		E9CE85E22566789F00796C8B /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		E9CE85E3256678A800796C8B /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		E9CE85E8256B625300796C8B /* UCARDirverUploadFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCARDirverUploadFileTool.h; sourceTree = "<group>"; };
+		E9CE85E9256B625300796C8B /* UCARDirverUploadFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCARDirverUploadFileTool.m; sourceTree = "<group>"; };
+		E9CE85ED256B66E000796C8B /* UCARWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCARWeakProxy.h; sourceTree = "<group>"; };
+		E9CE85EE256B66E000796C8B /* UCARWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCARWeakProxy.m; sourceTree = "<group>"; };
+		E9CE85F2256B8E5F00796C8B /* DirverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirverViewController.h; sourceTree = "<group>"; };
+		E9CE85F3256B8E5F00796C8B /* DirverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirverViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E95B20952545CD4400ACAD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CE85E4256678A800796C8B /* libmp3lame.a in Frameworks */,
+				74D7D8BC5F4243589BF2560D /* libPods-Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A93125AE96E8E93B1D6763B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4298E93264F2E6007294F613 /* libPods-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		910E28415C222C4E80CB5623 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EA842436E7AA3957CBD0ED2 /* Pods-Demo.debug.xcconfig */,
+				60B04658CD4145B31C014A6C /* Pods-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E95B208F2545CD4400ACAD27 = {
+			isa = PBXGroup;
+			children = (
+				E95B209A2545CD4400ACAD27 /* Demo */,
+				E95B20992545CD4400ACAD27 /* Products */,
+				910E28415C222C4E80CB5623 /* Pods */,
+				3A93125AE96E8E93B1D6763B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E95B20992545CD4400ACAD27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E95B20982545CD4400ACAD27 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E95B209A2545CD4400ACAD27 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E95B20BE2545CE3E00ACAD27 /* UCAR */,
+				E95B20B62545CD5700ACAD27 /* SupportingFiles */,
+				E95B20AC2545CD4800ACAD27 /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		E95B20B62545CD5700ACAD27 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E95B209B2545CD4400ACAD27 /* AppDelegate.h */,
+				E95B209C2545CD4400ACAD27 /* AppDelegate.m */,
+				E95B20A72545CD4800ACAD27 /* Assets.xcassets */,
+				E95B20A92545CD4800ACAD27 /* LaunchScreen.storyboard */,
+				E95B20AD2545CD4800ACAD27 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E95B20BE2545CE3E00ACAD27 /* UCAR */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE85E7256B622E00796C8B /* UseTool */,
+				E9CE85E12566789F00796C8B /* ConvertMP3 */,
+				E9CE85D02566789B00796C8B /* Encryption */,
+				E95B20C22545CE3E00ACAD27 /* UCARRecordSoundTool.h */,
+				E95B20C72545CE3E00ACAD27 /* UCARRecordSoundTool.m */,
+				E95B20C52545CE3E00ACAD27 /* UCARAudioTool.h */,
+				E95B20C02545CE3E00ACAD27 /* UCARAudioTool.m */,
+				E95B20C42545CE3E00ACAD27 /* UCARAudioFilePathTool.m */,
+				E95B20BF2545CE3E00ACAD27 /* UCARAudioFilePathTool.h */,
+				E9CE85ED256B66E000796C8B /* UCARWeakProxy.h */,
+				E9CE85EE256B66E000796C8B /* UCARWeakProxy.m */,
+				E95B20C12545CE3E00ACAD27 /* UCARLameTool.h */,
+				E95B20E52545D07800ACAD27 /* UCARLameTool.m */,
+				E95B20C32545CE3E00ACAD27 /* UCARSingle.h */,
+				E95B20C62545CE3E00ACAD27 /* UCARRecorderKit.h */,
+			);
+			path = UCAR;
+			sourceTree = "<group>";
+		};
+		E9CE85D02566789B00796C8B /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE85D12566789B00796C8B /* RNDecryptor.h */,
+				E9CE85D22566789B00796C8B /* RNCryptor.m */,
+				E9CE85D32566789B00796C8B /* RNCryptor+Private.h */,
+				E9CE85D42566789B00796C8B /* RNCryptorEngine.h */,
+				E9CE85D52566789B00796C8B /* RNEncryptor.h */,
+				E9CE85D62566789B00796C8B /* RNCryptor.h */,
+				E9CE85D72566789B00796C8B /* RNDecryptor.m */,
+				E9CE85D82566789B00796C8B /* RNEncryptor.m */,
+				E9CE85D92566789B00796C8B /* RNCryptor iOS.h */,
+				E9CE85DA2566789B00796C8B /* module.modulemap */,
+				E9CE85DB2566789B00796C8B /* RNCryptorEngine.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		E9CE85E12566789F00796C8B /* ConvertMP3 */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE85E3256678A800796C8B /* libmp3lame.a */,
+				E9CE85E22566789F00796C8B /* lame.h */,
+			);
+			path = ConvertMP3;
+			sourceTree = "<group>";
+		};
+		E9CE85E7256B622E00796C8B /* UseTool */ = {
+			isa = PBXGroup;
+			children = (
+				E95B20BA2545CE2700ACAD27 /* RecordSoundViewController.h */,
+				E95B20BB2545CE2700ACAD27 /* RecordSoundViewController.m */,
+				E9CE85F2256B8E5F00796C8B /* DirverViewController.h */,
+				E9CE85F3256B8E5F00796C8B /* DirverViewController.m */,
+				E9CE85E8256B625300796C8B /* UCARDirverUploadFileTool.h */,
+				E9CE85E9256B625300796C8B /* UCARDirverUploadFileTool.m */,
+			);
+			path = UseTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E95B20972545CD4400ACAD27 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95B20B12545CD4800ACAD27 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				A553728027E990EAC305698A /* [CP] Check Pods Manifest.lock */,
+				E95B20942545CD4400ACAD27 /* Sources */,
+				E95B20952545CD4400ACAD27 /* Frameworks */,
+				E95B20962545CD4400ACAD27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = E95B20982545CD4400ACAD27 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E95B20902545CD4400ACAD27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E95B20972545CD4400ACAD27 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E95B20932545CD4400ACAD27 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E95B208F2545CD4400ACAD27;
+			productRefGroup = E95B20992545CD4400ACAD27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95B20972545CD4400ACAD27 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E95B20962545CD4400ACAD27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95B20AB2545CD4800ACAD27 /* LaunchScreen.storyboard in Resources */,
+				E95B20A82545CD4800ACAD27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A553728027E990EAC305698A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E95B20942545CD4400ACAD27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CE85DF2566789B00796C8B /* RNCryptorEngine.m in Sources */,
+				E95B20BC2545CE2700ACAD27 /* RecordSoundViewController.m in Sources */,
+				E9CE85DC2566789B00796C8B /* RNCryptor.m in Sources */,
+				E9CE85EA256B625300796C8B /* UCARDirverUploadFileTool.m in Sources */,
+				E9CE85F4256B8E5F00796C8B /* DirverViewController.m in Sources */,
+				E9CE85DE2566789B00796C8B /* RNEncryptor.m in Sources */,
+				E9CE85EF256B66E000796C8B /* UCARWeakProxy.m in Sources */,
+				E95B20CA2545CE3E00ACAD27 /* UCARRecordSoundTool.m in Sources */,
+				E95B20C82545CE3E00ACAD27 /* UCARAudioTool.m in Sources */,
+				E95B20E62545D07800ACAD27 /* UCARLameTool.m in Sources */,
+				E95B209D2545CD4400ACAD27 /* AppDelegate.m in Sources */,
+				E95B20C92545CE3E00ACAD27 /* UCARAudioFilePathTool.m in Sources */,
+				E9CE85DD2566789B00796C8B /* RNDecryptor.m in Sources */,
+				E95B20AE2545CD4800ACAD27 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E95B20A92545CD4800ACAD27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95B20AA2545CD4800ACAD27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E95B20AF2545CD4800ACAD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E95B20B02545CD4800ACAD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E95B20B22545CD4800ACAD27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA842436E7AA3957CBD0ED2 /* Pods-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/SupportingFiles/辅助文件/转换为MP3",
+					"$(PROJECT_DIR)/Demo/UCAR/ConvertMP3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiejiapei.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E95B20B32545CD4800ACAD27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B04658CD4145B31C014A6C /* Pods-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRMHT335N6;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo/SupportingFiles/辅助文件/转换为MP3",
+					"$(PROJECT_DIR)/Demo/UCAR/ConvertMP3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xiejiapei.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E95B20932545CD4400ACAD27 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95B20AF2545CD4800ACAD27 /* Debug */,
+				E95B20B02545CD4800ACAD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95B20B12545CD4800ACAD27 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95B20B22545CD4800ACAD27 /* Debug */,
+				E95B20B32545CD4800ACAD27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E95B20902545CD4400ACAD27 /* Project object */;
+}
