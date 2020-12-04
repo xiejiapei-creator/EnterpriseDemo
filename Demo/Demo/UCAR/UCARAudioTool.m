@@ -588,7 +588,7 @@ SingleM(UCARAudioTool)
         NSLog(@"成功在原文件夹生成加密后的文件");
         
         // 删除未加密的mp3原始录音文件
-        // [fileManager removeItemAtPath:recorderFilePath error:&error];
+        [fileManager removeItemAtPath:recorderFilePath error:&error];
         if (error == nil)
         {
             NSLog(@"成功删除未加密的mp3原始录音文件");
