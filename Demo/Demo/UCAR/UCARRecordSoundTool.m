@@ -139,9 +139,23 @@ SingleM(UCARRecordSoundTool)
 // 上传录音文件的委托方法
 - (void)uploadRecordingFileWithEncryptedRecorderFilePath:(NSString *)recorderFilePath
 {
-    // 调用上传录音文件
-    if (self.delegate && [self.delegate respondsToSelector:@selector(uploadRecordingFileWithEncryptedRecorderFilePath:)])
+    NSString *recordFileName = [recorderFilePath lastPathComponent];
+    NSNumber *fileSize = [[NSFileManager defaultManager] attributesOfItemAtPath:recorderFilePath error:nil][NSFileSize];
+    NSLog(@"待上传的录音文件大小：%@",fileSize);
+    
+    if ([recordFileName containsString:@"recording"])
     {
+        // 上传的文件中不能包含带有recording标识的文件
+        [self deleteRecordFileWithFilePath:recorderFilePath];
+    }
+    else if ([fileSize doubleValue] == 0)
+    {
+        // 删除录音大小为0的文件
+        [self deleteRecordFileWithFilePath:recorderFilePath];
+    }
+    else if (self.delegate && [self.delegate respondsToSelector:@selector(uploadRecordingFileWithEncryptedRecorderFilePath:)])
+    {
+        // 调用上传录音文件
         [self.delegate uploadRecordingFileWithEncryptedRecorderFilePath:recorderFilePath];
     }
 }

@@ -71,6 +71,7 @@
 - (void)endTripClick
 {
     [[UCARRecordSoundTool shareUCARRecordSoundTool] endTrip];
+    //[[UCARRecordSoundTool shareUCARRecordSoundTool] decryptAllUCARRecorderFilesWithEncryptKey:@"" modifySuffix:@""];
 }
 
 // 结束行程后立即开启新订单

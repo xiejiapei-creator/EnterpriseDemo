@@ -710,7 +710,24 @@ SingleM(UCARAudioTool)
         {
             // 每个UCAR录音文件的路径
             NSString *UCARRecordFilePath = [recordFilePath stringByAppendingString:audioPath];
-            [UCARAudioFilePathList addObject:UCARRecordFilePath];
+            
+            NSString *recordFileName = [UCARRecordFilePath lastPathComponent];
+            NSNumber *fileSize = [[NSFileManager defaultManager] attributesOfItemAtPath:UCARRecordFilePath error:nil][NSFileSize];
+            
+            if ([recordFileName containsString:@"recording"])
+            {
+                // 上传的文件中不能包含带有recording标识的文件
+                [self deleteRecordFileWithFilePath:UCARRecordFilePath];;
+            }
+            else if ([fileSize doubleValue] == 0)
+            {
+                // 删除录音大小为0的文件
+                [self deleteRecordFileWithFilePath:UCARRecordFilePath];
+            }
+            else
+            {
+                [UCARAudioFilePathList addObject:UCARRecordFilePath];
+            }
         }
     }
     
