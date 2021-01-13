@@ -61,8 +61,8 @@
 // 司机到达乘车点，开始录音
 - (void)startRecordClick
 {
-    [UCARRecordSoundTool shareUCARRecordSoundTool].timeInterval = 5;
-    [UCARRecordSoundTool shareUCARRecordSoundTool].maximumMemory = 0.1;
+    [UCARRecordSoundTool shareUCARRecordSoundTool].timeInterval = 180;
+    //[UCARRecordSoundTool shareUCARRecordSoundTool].maximumMemory = 0.1;
     [UCARRecordSoundTool shareUCARRecordSoundTool].delegate = self;
     [[UCARRecordSoundTool shareUCARRecordSoundTool] startRecordWithOrderNumber:@"35200505324217" driverID:@"2890893"];
 }

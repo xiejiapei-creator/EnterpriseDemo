@@ -38,6 +38,9 @@
 // 录音文件路径数组
 @property (nonatomic, strong) NSArray *audioPathList;
 
+// 开始录制时间
+@property (nonatomic, assign) NSTimeInterval recorderBeginTime;
+
 @end
 
 
@@ -112,7 +115,6 @@ SingleM(UCARAudioTool)
 // 需包含：订单号_司机ID_开始毫秒时间戳_结束毫秒时间戳_音频文件原始后缀名
 - (NSString *)createRecordFileNameWithOrderNumber:(NSString *)orderNumber driverID:(NSString *)driverID
 {
-
     // 开始录制日期
     NSDate *startRecordDate = [self getCurrentDate];
     
@@ -247,6 +249,9 @@ SingleM(UCARAudioTool)
             // 首次使用应用时如果调用record方法会询问用户是否允许使用麦克风
             [self.audioRecorder record];
             
+            // 开始录制时间
+            self.recorderBeginTime = [self.audioRecorder deviceCurrentTime];
+            
             // 销毁之前的计时器
             // dispatch_cancel(self.timer);
             self.timer = nil;
@@ -366,10 +371,11 @@ SingleM(UCARAudioTool)
     [self.audioRecorder updateMeters];
     
     // 当前录音时长
-    NSLog(@"当前录音时长：%f",self.audioRecorder.currentTime);
+    NSTimeInterval recordDuration = self.audioRecorder.deviceCurrentTime - self.recorderBeginTime;
+    NSLog(@"当前录音时长：%f",recordDuration);
     
     // 录音文件每3分钟保存一个文件，保存成功则录制下一段，时长可配置
-    if (self.audioRecorder.currentTime >= self.timeInterval)
+    if (recordDuration >= self.timeInterval)
     {
         // 结束录音
         [self endRecord];
